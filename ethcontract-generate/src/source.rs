@@ -96,7 +96,7 @@ impl Source {
     /// [Etherscan]: etherscan.io
     /// [unpkg]: unpkg.io
     pub fn parse(source: &str) -> Result<Self> {
-        let root = env::current_dir()?.canonicalize()?;
+        let root = env::var("CARGO_MANIFEST_DIR")?;
         Source::with_root(root, source)
     }
 
@@ -188,7 +188,8 @@ impl FromStr for Source {
 
 fn get_local_contract(path: &Path) -> Result<String> {
     let path = if path.is_relative() {
-        let absolute_path = path.canonicalize().with_context(|| {
+        let root = env::var("CARGO_MANIFEST_DIR")?;
+        let absolute_path = Path::new(&root).join(path).canonicalize().with_context(|| {
             format!(
                 "unable to canonicalize file from working dir {} with path {}",
                 env::current_dir()
