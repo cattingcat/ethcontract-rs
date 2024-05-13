@@ -12,7 +12,7 @@ Tools for mocking ethereum contracts.
 """
 
 [dependencies]
-ethcontract = { version = "0.25.6", path = "../ethcontract", default-features = false, features = ["derive"] }
+ethcontract-fork = { version = "0.25.6", path = "../ethcontract", default-features = false, features = ["derive"] }
 hex = "0.4"
 mockall = "0.11"
 rlp = "0.5"

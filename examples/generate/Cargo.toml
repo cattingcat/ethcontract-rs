@@ -7,7 +7,7 @@ edition = "2021"
 license = "MIT OR Apache-2.0"
 
 [dependencies]
-ethcontract = { path = "../../ethcontract" }
+ethcontract-fork = { path = "../../ethcontract" }
 futures = "0.3"
 tokio = { version = "1.6", features = ["macros"] }
 
