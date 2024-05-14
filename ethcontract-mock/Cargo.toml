@@ -20,4 +20,4 @@ predicates = "3.0"
 
 [dev-dependencies]
 tokio = { version = "1.6", features = ["macros", "rt"] }
-ethcontract-derive = { version = "0.25.6", path = "../ethcontract-derive", default-features = false }
+ethcontract-derive-fork = { version = "0.25.6", path = "../ethcontract-derive", default-features = false }

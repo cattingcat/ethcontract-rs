@@ -110,7 +110,7 @@ pub use aws_config;
 pub use ethcontract_common as common;
 pub use ethcontract_common::contract::Contract;
 #[cfg(feature = "derive")]
-pub use ethcontract_derive::contract;
+pub use ethcontract_derive_fork::contract;
 pub use futures;
 pub use jsonrpc_core as jsonrpc;
 pub use serde_json as json;

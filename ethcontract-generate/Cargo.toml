@@ -1,5 +1,5 @@
 [package]
-name = "ethcontract-generate"
+name = "ethcontract-generate-fork"
 version = "0.25.6"
 authors = ["Gnosis developers <developers@gnosis.io>"]
 edition = "2021"

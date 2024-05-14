@@ -19,8 +19,8 @@ name = "ethcontract"
 [features]
 aws-kms = ["aws-config", "aws-sdk-kms", "rlp"]
 default = ["derive", "http-tls", "ws-tls-tokio", "derive-http"]
-derive = ["ethcontract-derive"]
-derive-http = ["ethcontract-derive/http"]
+derive = ["ethcontract-derive-fork"]
+derive-http = ["ethcontract-derive-fork/http"]
 http = ["web3/http"]
 http-native-tls = ["http", "web3/http-native-tls"]
 http-rustls-tls = ["http", "web3/http-rustls-tls"]
@@ -36,7 +36,7 @@ aws-config = { version = "0.55", optional = true }
 aws-sdk-kms = { version = "0.28", optional = true }
 arrayvec = "0.7"
 ethcontract-common = { version = "0.25.6", path = "../ethcontract-common" }
-ethcontract-derive = { version = "0.25.6", path = "../ethcontract-derive", optional = true, default-features = false }
+ethcontract-derive-fork = { version = "0.25.6", path = "../ethcontract-derive", optional = true, default-features = false }
 futures = "0.3"
 futures-timer = "3.0"
 hex = "0.4"
