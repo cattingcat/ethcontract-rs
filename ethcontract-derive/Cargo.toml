@@ -1,5 +1,5 @@
 [package]
-name = "ethcontract-derive"
+name = "ethcontract-derive-fork"
 version = "0.25.6"
 authors = ["Gnosis developers <developers@gnosis.io>"]
 edition = "2021"
@@ -13,7 +13,7 @@ Proc macro for generating type-safe bindings to Ethereum smart contracts.
 
 [features]
 default = ["http"]
-http = ["ethcontract-generate/http"]
+http = ["ethcontract-generate-fork/http"]
 
 [lib]
 proc-macro = true
@@ -21,7 +21,7 @@ proc-macro = true
 [dependencies]
 anyhow = "1.0"
 ethcontract-common = { version = "0.25.6", path = "../ethcontract-common" }
-ethcontract-generate = { version = "0.25.6", path = "../ethcontract-generate", default-features = false }
+ethcontract-generate-fork = { version = "0.25.6", path = "../ethcontract-generate", default-features = false }
 proc-macro2 = "1.0"
 quote = "1.0"
 syn = "2.0"

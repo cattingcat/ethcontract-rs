@@ -6,4 +6,4 @@ edition = "2021"
 license = "MIT OR Apache-2.0"
 
 [dependencies]
-ethcontract = { path = "../../ethcontract", default-features = false, features = ["derive"] }
+ethcontract-fork = { path = "../../ethcontract", default-features = false, features = ["derive"] }

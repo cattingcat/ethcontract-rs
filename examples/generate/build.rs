@@ -1,5 +1,5 @@
-use ethcontract_generate::loaders::HardHatLoader;
-use ethcontract_generate::ContractBuilder;
+use ethcontract_generate_fork::loaders::HardHatLoader;
+use ethcontract_generate_fork::ContractBuilder;
 
 fn main() {
     let out_dir = std::env::var("OUT_DIR").unwrap();
